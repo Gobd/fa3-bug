@@ -2,6 +2,7 @@
   <div>
     <button @click="changeIcon()">Change Icon</button>
     <font-awesome-icon :icon="icon" />
+    {{icon}}
   </div>
 </template>
 
@@ -20,7 +21,6 @@ export default {
       } else {
         this.icon = "cog";
       }
-      console.log(this.icon);
     },
   }
 };
